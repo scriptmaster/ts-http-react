@@ -1,5 +1,5 @@
-# ts-http
-A no-express static view templating with typescript node http server
+# ts-http-react
+A no-express static view templating with typescript react views on a node http server
 
 ## Performance
 
