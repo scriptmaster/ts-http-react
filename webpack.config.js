@@ -5,7 +5,7 @@ module.exports = {
     watch: true,
 
     entry: {
-        'app': './src/app.ts'
+        'bundle': './src/browser.tsx'
     },
 
     output: {
@@ -13,6 +13,11 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
         new webpack.optimize.UglifyJsPlugin({minimize: true}),
         new BrowserSyncPlugin({
             // browse to http://localhost:3000/ during development, 

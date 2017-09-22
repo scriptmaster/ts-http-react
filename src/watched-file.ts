@@ -59,7 +59,7 @@ export class WatchFiles {
     }
 
     get(name: string): String | Buffer {
-        return this.files[name];
+        return this.files[name.replace(/\..+$/, '')];
     }
 
 }
