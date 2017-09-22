@@ -13,3 +13,4 @@ All tests on low-end cloud server: on a 1 GB 1 core gcloud compute instance.
 + spirit: 9.6k rps (ms: 10-14-26)
 + micro: 8k rps (ms: 12-19-29)
 + express: 5.3k rps (ms: 18-31-45)
++ php: 8.1k (ms: 12-14-22)
